@@ -401,6 +401,28 @@ function Home() {
 
 
 
+      {/* Start News section */}
+
+      <section className="container my-5 news-section">
+      <div className="row justify-content-center ">
+        <div className="col-lg-8 col-md-10 ">
+          <div className="card news-card p-4">
+            <h4 className="card-title">What’s New In Lagos</h4>
+            <button className='btn-line2' ></button>
+            <p className="card-text">
+              “Lagos State Launches Palative Initiative to Support Service Providers Amidst Economic Challenges.”
+            </p>
+            <button className="btn btn-outline-primary">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     {/* End News section */}
+
+
+
+
 
 
 

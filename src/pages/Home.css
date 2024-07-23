@@ -333,8 +333,6 @@
 
 
 
-
-
   {/* Start map section */}
 
   .map-section{
@@ -433,7 +431,82 @@
   }
 
 
-  
-
   /* End testimonial section  */
+
+
+
+
+
+  
+    {/* Start News section */}
+
+    .news-card {
+      background-color: #FFEDE6 !important;
+      border-radius: 20px;
+      position: relative;
+    }
+
+
+    .btn-line2{
+
+      width: 4rem;
+      height: 0.1rem;
+      border: none;
+      background-color: #e9aa08;
+      border-radius: 2rem;    
+      position: relative;
+      top:0.2rem;
+      margin-bottom: 2rem;
+   
+
+    }
+
+
+
+
+    .news-card h2 {
+      color: #333;
+   
+    }
+    
+    .news-card .btn-outline-primary {
+      border-color: #ff9f00;
+      color: #ff9f00;
+    }
+    
+    .news-card .btn-outline-primary:hover {
+      background-color: #ff9f00;
+      color: white;
+    }
+    
+    .news-card::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      background-color: #d4edda;
+      border-radius: 50%;
+    }
+    
+    .news-card::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: 40px;
+      width: 15px;
+      height: 15px;
+      background-color: #d4edda;
+      border-radius: 50%;
+    }
+
+
+    .news-section{
+      margin-top: 6rem;
+    }
+
+
+      {/* End News section */}
+
 

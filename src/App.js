@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from "./Component/Navbar"
+import Footer from "./Component/Footer"
 
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap.bundle"
@@ -32,6 +33,8 @@ function App() {
 
 
 </BrowserRouter>
+
+<Footer/> 
 
 </React.Suspense>
 
