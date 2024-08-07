@@ -3,6 +3,14 @@ footer {
     background-color: #0a0a0a;
     color: #fff;
     padding-top: 40px;
+    padding-bottom: 0rem !important;
+    max-height:90vh !important; 
+  }
+
+  .footer-section{
+    height:90vh !important; 
+    padding-bottom: none !important;
+
   }
   
   footer h5 {
@@ -17,11 +25,62 @@ footer {
   footer ul li {
     margin-bottom: 10px;
   }
+
+  .footer-btn1{
+    background-color: #28a745 !important;
+    color: #fff !important;
+    padding: 0.5rem 2rem !important;
+  }
+
+  .footer-btn1:hover{
+    background-color: #a5ffba !important;
+    color: #0a0a0a !important;
+  }
+
+  .footer-btn2{
+    border: 0.1rem solid #28a745 !important;
+    background-color: transparent !important;
+    color: #28a745 !important;
+    padding: 0.5rem 3.5rem !important;
+  }
+
+  .footer-btn2:hover{
+    background-color: #a5ffba !important;
+    color: #0a0a0a !important;
+    border: none !important;
+  }
   
   footer .newsletter {
-    background-color: #e7f9e7;
+    background-color: #E5FFE7 !important;
     border-radius: 10px;
     padding: 20px;
+    position: relative !important;
+    bottom: 18rem !important;
+  }
+
+  .newsletter-container h5{
+    color: #0a0a0a !important;
+    padding: 0rem 5rem !important;
+   
+   
+  }
+  
+  .footerbtn-line{
+    width: 1rem !important;
+    height: 0.1rem !important;
+    border: none;
+    background-color: #e9aa08;
+    border-radius: 2rem;
+    position: relative;
+    bottom: 0.3rem; 
+    margin: 0 0.5rem !important;
+    
+     
+}
+
+
+  .newsletter-container p{
+    color: #0a0a0a !important;
   }
   
   footer .btn-warning {
@@ -34,7 +93,7 @@ footer {
     border-color: #e68a00;
   }
   
-  footer .btn-outline-success {
+  /* footer .btn-outline-success {
     border-color: #28a745;
     color: #28a745;
   }
@@ -42,7 +101,18 @@ footer {
   footer .btn-outline-success:hover {
     background-color: #28a745;
     color: #fff;
+  } */
+
+  .below-footer{
+    position: relative;
+    bottom: 15rem !important;
   }
+
+  .footer-logo{
+    width: 2rem !important;
+    margin-right: 1rem !important;
+ }
+
   
   footer a {
     color: #fff;

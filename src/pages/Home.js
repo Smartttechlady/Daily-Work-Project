@@ -2,7 +2,7 @@ import { React, useState, useEffect } from 'react'
 import "./Home.css"
 import { Link } from 'react-router-dom'
 import Banner from './../Component/Banner'
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -60,7 +60,7 @@ function Home() {
       nextSlide();
     }, 3000);
 
-    return () => clearInterval(autoScroll); // Cleanup interval on component unmount
+    return () => clearInterval(autoScroll); 
   }, []);
 
 
@@ -77,22 +77,22 @@ function Home() {
 
   const testimonials = [
     {
-      image: './..//images/T1.svg',  // Replace with actual image paths
+      image: './..//images/T1.svg', 
       text: '"Partnering with Daily Work has significantly boosted my business. As an electrician, I now receive regular job requests from local customers who trust the platform to find reliable professionals. Its a fantastic way to connect with the community and grow my client base."',
     },
 
     {
-      image: './..//images/T2.svg',  // Replace with actual image paths
+      image: './..//images/T2.svg', 
       text: '"Using Daily Work was a game-changer for me. I needed someone to do some carpentry work, and within minutes, I connected with a skilled vendor who did an amazing job. The process was seamless, and I felt confident knowing I was hiring a trusted local professional."',
     },
 
     {
-      image: './..//images/T3.svg',  // Replace with actual image paths
+      image: './..//images/T3.svg',  
       text: '"Joining Daily Work has been one of the best decisions for my cleaning business. The platform makes it easy for customers to find and book my services, and I have seen a noticeable increase in bookings. It is a great way to showcase my skills and connect with clients who value quality work."',
     },
 
     {
-      image: './..//images/T4.svg',  // Replace with actual image paths
+      image: './..//images/T4.svg',  
       text: '"My team and I had been struggling to find a reliable plumber for our office, but thanks to Daily Work, we found an expert right in the neighborhood. The service was prompt, professional, and exceeded our expectations. Highly recommend this platform to anyone in need of quality local services!"',
     },
 
@@ -141,7 +141,9 @@ function Home() {
       {/* Start banner */}
       <div className=' container banner' >
 
-        <Banner />
+      <Navbar/>
+
+      <Banner/>
 
       </div>
 
@@ -183,10 +185,11 @@ function Home() {
                 </div>
               </li>
             </ul>
+      
             <div className="d-flex">
-              <button className="me-2 btn-1 ">Join Daily Work</button>
-              <button className=" btn-outline btn-2 "> Learn How to Book</button>
-            </div>
+            <button className="btn me-2  sec1-btn1">Join Daily Work</button>
+            <button className="btn sec1-btn2 ">Learn How to Book</button>
+          </div>
           </Col>
 
           <Col md={6} className="text-center">

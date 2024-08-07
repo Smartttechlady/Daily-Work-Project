@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "./Banner.css"
+import './Banner.css'
 import { Carousel, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';    
 
