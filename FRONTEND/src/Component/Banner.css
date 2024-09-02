@@ -1,0 +1,109 @@
+.banner {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  transition: all 10s ease-in-out;
+  z-index: -888;
+}
+
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+
+
+.banner-content h1{
+  font-weight: 700 !important;
+  font-size: 3rem ! important;
+  max-width:100rem ! important;
+}
+
+.banner-content h1 span {
+  color:#e9aa08 ;
+  font-family: "Sansita Swashed", system-ui;
+  font-optical-sizing: auto;
+  font-weight:800;
+  font-style: normal;
+  }
+
+  .search-btn{
+    background-color:#28a745 !important;
+    border-radius: 0 0.5rem 0.5rem 0 !important;
+    
+  }
+
+  .search-btn:hover{
+    background-color: #627166 !important;
+  }
+
+
+  .form-control{
+    border-radius: 0.5rem 0rem 0rem 0.5rem !important;
+    padding: 0.7rem 0.5rem !important;
+    color: #e4e5e7 !important;
+    font-style: italic !important;
+
+  }
+  
+
+
+.search-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.search-form .form-control {
+  border-radius: 0;
+  flex: 1;
+}
+
+.search-form .btn {
+  border-radius: 0;
+  margin-left: -1px;
+}
+
+@media (max-width: 768px) {
+  .banner-content {
+    width: 90%;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form .btn {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .search-btn{
+    background-color:#28a745 !important;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+    padding: 0.7rem 0.5rem !important;
+    
+  }
+
+  .search-btn:hover{
+    background-color: #627166 !important;
+  }
+
+
+  .form-control{
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+    padding: 0.7rem 0.5rem !important;
+
+  }
+}

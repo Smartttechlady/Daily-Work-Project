@@ -1,0 +1,27 @@
+.terms-container {
+    padding: 20px;
+  }
+  
+  .back-button {
+    font-size: 18px;
+  }
+  
+  .terms-logo {
+    max-width: 150px;
+  }
+
+  .terms-underline {
+    border-top: 0.2px solid #6e6f6e; 
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  
+  .terms-content {
+    text-align: left;
+    margin-top: 2rem !important;
+  }
+  
+  .terms-footer {
+    font-style: italic !important;
+  }

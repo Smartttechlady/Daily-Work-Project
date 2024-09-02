@@ -1,0 +1,231 @@
+.vendor-details-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.first-section {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-group {
+    position: absolute !important;
+    top: -20px !important; 
+    right: 10px !important;
+    display: flex !important;
+    gap: 10px !important;
+    z-index: 100 !important; 
+}
+
+.vendor-card {
+    position: relative !important; 
+    border: 1px solid #ddd !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    overflow: hidden !important; 
+}
+
+.icon-group svg {
+    cursor: pointer;
+}
+
+.icon-group svg:hover {
+    color: #007bff;
+}
+
+.image-slider {
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: 30% !important;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.behind-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+    opacity: 0.7;
+    transform: scale(0.95); 
+}
+
+.slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 30% !important;    
+    left: 0;
+    right: 0;
+    padding: 5px 20px;
+}
+
+.prev-button,
+.next-button {
+    background-color: rgba(232, 230, 230, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.vendor-profile {
+    text-align: center;
+}
+
+.photo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-photo,
+.client-photo {
+    width: 60px;
+    height: 60px;
+}
+
+
+.active-dot {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid #fff;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.star-icon {
+    color: #e9aa08;
+}
+
+.billng-img{
+    width: 11.2rem !important;
+    height:11.2rem !important;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-left:4rem;
+
+}
+
+
+
+
+
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.billing-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.invoice-button {
+    width: 100%;
+    margin-bottom: 10px;
+    border:0.1rem, solid, #14A800!important ;
+   
+}
+
+.contact-button {
+    width: 100%;
+    background-color: #14A800 !important;
+}
+
+.second-section {
+    margin-top: 5rem !important;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+
+.review-content {
+    flex: 1;
+}
+
+.see-more {
+    display: block;
+    color: #007bff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+.see-all {
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+@media (max-width: 767.98px) {
+    .vendor-details-container {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header h2 {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .profile-photo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .active-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+
+    .invoice-button,
+    .contact-button {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}

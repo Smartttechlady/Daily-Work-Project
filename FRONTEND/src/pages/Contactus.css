@@ -1,0 +1,67 @@
+
+.contact-us-container {
+    min-height: 100vh;
+  }
+  
+  .left-column {
+    background-color: #E7F3E8; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-button {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .contact-image {
+    max-width: 70%; 
+    margin-top: 20px;
+  }
+  
+  .right-column {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right-column img {
+    max-width: 150px; 
+    margin-bottom: 20px;
+  }
+  
+  .right-column p {
+    margin-bottom: 30px;
+  }
+
+  .submit-btn{
+    background-color: #14A800 !important;
+  }
+  
+  @media (max-width: 768px) {
+    .left-column, .right-column {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .contact-image {
+      max-width: 50%; /* Adjust the image size as necessary */
+    }
+  
+    .right-column img {
+      max-width: 100px; /* Adjust logo size as needed */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .left-column, .right-column {
+      padding: 10px;
+    }
+  }

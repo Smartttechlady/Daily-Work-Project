@@ -1,0 +1,66 @@
+.sidetop-text{
+    line-height: 0.8rem;
+}
+
+.location{
+    color: #fdbe02;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0.2rem;
+
+}
+
+.nav-list{
+    background-color: #14A800 !important;
+}
+
+.dashboard-logo{
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+.sidedown-text{
+    font-size: 1rem !important;
+    color: #6e6e6e;
+}   
+
+.contact-btn{
+    margin-left: 0.5rem !important;
+    border:0.1rem, solid, #14A800 !important;
+    color: #14A800 !important;
+    border-radius: 0.5rem !important  ;
+    background-color: transparent !important;
+}
+
+
+.vendorprofile-icon{
+    height: 2rem;
+    width: 2rem;
+}
+
+.left-bg{
+    background-color: #ececec !important;
+}
+
+
+.right-bg{
+    background-color: #ececec !important;
+}
+
+
+.latest-update p{
+    font-size: 0.8rem;
+}
+
+
+.active-nav-item {
+    background-color: #14A800; 
+    color: white;
+  }
+
+
+/* Start Message */
+
+
+
+  

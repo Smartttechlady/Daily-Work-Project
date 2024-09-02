@@ -1,0 +1,64 @@
+
+.logo{
+   width: 8rem !important;
+}
+
+.navbar-collapse ul {
+    position: relative;
+    left: 10rem;
+    gap: 2rem;
+ }
+
+ .btn-signin{
+    position: relative;
+    left: 15rem;
+ }
+
+ .btn-join{
+   position: relative;
+   right: 5rem;
+ }
+
+ .nav-item a{
+   transform: .5s ease-in-out;
+ }
+
+ .nav-item a:hover{
+    color: #14A800 !important;
+    transition: .5s ease-in-out;
+ }
+
+ .btn-signin:hover{
+    color: #14A800 !important;
+ }
+
+ .btn-join{
+   background-color:#14A800 !important; 
+   color: #fff !important;
+   transform: .2s ease-in-out !important;
+ }
+
+
+ .btn-join:hover{
+    color: #14A800 !important;
+    background-color: #fff !important;
+    border: 1px solid #14A800 !important;
+ }
+
+
+ .btn-post{
+   background-color:transparent !important; 
+   color: #14A800 !important;
+   border: 1px solid #14A800 !important;
+   transform: .2s ease-in-out !important;
+ }
+
+ .btn-post:hover{
+   color: #fff !important;
+   background-color: #14A800 !important;
+   
+
+ }
+
+ 
+ 

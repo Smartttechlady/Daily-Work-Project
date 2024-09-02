@@ -1,0 +1,42 @@
+.table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.border {
+    border: 1px solid #ccc;
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+
+.send-invoice{
+margin-left: 30rem !important;
+
+}
+
+.grandtotal-btn{
+margin-left: 30rem !important;
+}
+
+.grandtotal{
+    margin-left: 30rem !important;
+    font-size: 1rem !important;
+    }
+
+
+.grandtotal{
+ margin-left: 30rem !important;
+color: #14A800;
+ }
+
+
+ .sendinvoice-btn{
+    margin-left: 22rem !important;
+    background-color: #FEB02A;
+    color: #fff;
+    border: none !important;
+    font-weight: 600;
+
+ }

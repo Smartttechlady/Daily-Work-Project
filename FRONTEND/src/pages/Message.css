@@ -1,0 +1,212 @@
+.chat-rectangle {
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    
+  }
+  
+  .active-chat .message {
+    display: flex;
+    align-items: center;
+  }
+  
+  .message-content {
+    border-radius: 20px;
+  }
+  
+  .input-group-text {
+    cursor: pointer;
+    background: #14A800!important;
+    padding: 8px 10px !important;
+    
+  }
+  
+  .chat-search{
+    color: #fefefe;
+    
+  }
+  
+  .chat-profileimg{
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  /* .dropdown-menu {
+    /* position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000;
+    display: block;
+    padding: 0.5rem;
+  }  */
+  
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* .dropdown-item:hover {
+    background-color: #f8f9fa;
+  } */
+  
+  
+
+
+  
+  
+  /* Style for the chat component container */
+ .chat-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  } 
+  
+   
+  /* Style for the input group */
+  .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  }
+  
+  /* Style for the input group text */
+  /* .input-group-text {
+  cursor: pointer;
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .input-group-text:hover {
+  background-color: #ced4da;
+  }
+   */
+
+  .form-control {
+  border: 0.1rem solid #0b0b0b1e !important;
+  border-radius: 20px;
+  padding: 3px 15px !important;
+  font-size: 16px;
+  box-shadow:0 0 5px rgba(154, 154, 154, 0.25);
+  }
+  
+  .form-control:focus {
+  outline: none;
+   box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  }  
+   
+  /* Style for the dropup menu */
+  /* .dropup-menu {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  }  */ */
+  
+  /* Style for dropup menu buttons */ */
+  /* .dropup-menu button,
+  .dropup-menu label {
+  display: flex;
+  align-items: center;
+  background-color: #e9ecef;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #495057;
+  transition: background-color 0.3s ease;
+  }  */
+  
+  /* .dropup-menu button:hover,
+  .dropup-menu label:hover {
+  background-color: #ced4da;
+  } */
+  
+  /* Hide file and image input fields */
+  /* .dropup-menu input[type="file"] {
+  display: none;
+  } */
+  
+  /* Style for the message list */
+  /* ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+  }
+  
+  li {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  }
+  
+  /* Icon and text styling for messages */
+  /* li span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  }
+  
+  li span svg {
+  font-size: 20px;
+  }
+  
+  /* .dropup-menu .dropup-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  } */
+/*   
+  .dropup-menu .dropup-item svg {
+  font-size: 18px;
+  }
+  
+  .dropup-menu .dropup-item span {
+  font-size: 14px;
+  } 
+   
+  
+  /* .dropup-menu .dropup-item label {
+  margin: 0;
+  cursor: pointer;
+  } */ */
+  
+  .writemessage-section{
+  margin-top:8rem;
+  }
+
+
+  .chat-amanda{
+    display: flex !important;
+    flex-direction: column !important;
+   
+
+  }
+  
+  .cp-info{
+    text-decoration: none !important; 
+    color: #000;
+  }

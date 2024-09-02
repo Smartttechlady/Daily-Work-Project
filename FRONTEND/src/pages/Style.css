@@ -1,0 +1,1386 @@
+ /* start Page not found */
+.container {
+    max-width: 960px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .btn-success {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+   /* End Page not found */
+
+
+
+
+/* Start client/vendor apply */
+
+.option-box {
+  border: 2px solid #ccc;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.clienticon{
+  width: 3rem;
+}
+
+
+
+/* .apply-heading{
+  z-index: 100;
+} */
+
+.cstop{
+  position: relative;
+  top: -1rem;
+}
+
+.back-btn{
+  position: absolute !important;
+  top: 2.2rem  !important;
+  right: 0%;
+  z-index: 2;
+  color: #fff!important; 
+
+}
+
+
+.logo-text{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.vendoricon{
+  width: 2.5rem;
+}
+
+.option-box.active {
+  border-color: #28a745;
+}
+
+.option-box:hover {
+  border-color: #28a745;
+}
+
+.icon-container {
+  margin-bottom: 10px;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+  /* End client/vendor apply */
+
+
+
+
+
+/* Start signup */
+
+  .or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .or-divider::before,
+  .or-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .or-divider:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .or-divider:not(:empty)::after {
+    margin-left: .25em;
+  }
+
+  .signup-top{
+    position: relative;
+    top: -1rem;
+  
+  }
+  
+
+
+  .signup-form h2{
+
+    margin-top: 0rem !important;
+    margin-bottom: 5rem !important;
+  }
+
+  .signup-input{
+    margin-top: 4rem !important;
+  }
+
+  .signup-btn{
+    background-color: #28a745 !important;
+  }
+
+  .apple-icon{
+    font-size: 1.3rem !important;
+    text-align: center;
+  }
+
+  .google-icon{
+    font-size: 1.3rem !important;
+    text-align: center;
+  }
+
+  .signupbtns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center; ;
+    gap: 0.2rem !important;
+  }
+
+  .back-btn1{
+    position: absolute !important;
+    top: 2.2rem  !important;
+    right: 2%;
+    z-index: 2;
+    color: #fff!important; 
+  
+  }
+
+  .signuplogo{
+    margin-top:3rem !important;
+  }
+
+  /* End signup */
+
+
+
+   
+ /* Start About us */
+
+  .about-us-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-text1{
+    font-size: 1.1rem !important;
+    width: 20rem !important;
+    margin-top: 1.2rem !important;
+   
+  }
+
+  .about-it p{
+    font-size: 1.1rem !important;
+  }
+
+  .about-img{
+    width: 30rem !important;
+  
+  }
+  .about-text2{
+    font-size: 1.1rem !important;
+
+  }
+  .bg-about2{
+    background-color: #FFEDE6;
+  }
+
+  .about-img2{
+    width: 15rem !important;
+    position: relative;
+    left: 10rem !important;
+  }
+
+  .aboutbtn-line{
+    width: 4rem;
+    height: 0.1rem;
+    border: none;
+    background-color: #e9aa08;
+    border-radius: 2rem;
+    position: relative;
+    bottom: 1rem;  
+    margin-left: 1rem;
+
+  }
+
+
+   /* End About us */
+  
+
+
+
+
+/* Start Portfolio Settings */
+
+   .step1-btn{
+    background-color: #28a745 !important;
+    border: none !important;
+   }
+
+   .portfolio-header{
+    position: relative;
+    top: -1rem;
+  }
+  
+  .back-btn{
+    position: absolute !important;
+    top: 2.2rem  !important;
+    right: 0%;
+    z-index: 2;
+    color: #fff!important; 
+  
+  }
+
+
+  /* End Portfolio Settings */
+
+
+
+/* Start dashboard page */
+
+  .sidebar {
+    background-color: #f2f2f2;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  
+  .profile-section img {
+    max-width: 100px;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+  }
+  
+  .nav-link:hover {
+    color: #fbfbfb;
+    background-color: #909383;
+    border-radius: 1rem;
+  }
+  
+  .contact-section {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+
+  .location-btn{
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+.dashboard-icon{
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  right: 7rem;
+}
+
+
+  .dashboard-logo{
+    align-self: self-start;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .info-box {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .clients-section .client-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+  }
+
+  .dashboard-photo{
+    width: 8rem !important;
+    height: 8rem !important;
+    object-fit: contain !important;
+    align-self: center !important;
+  }
+
+  .dashboard-text{
+    font-size: 1rem !important;
+ 
+  } 
+
+  .dashboard-text p {
+    line-height: 0.2rem !important;
+    font-size: 1rem !important;
+    margin-top: 1rem !important;
+    color: #797979;
+    font-weight: 100;
+  }
+
+.contact-text{
+  line-height: 0.1rem !important;
+
+}
+
+.contact-text p{
+  font-size: 1rem !important;
+  color: #797979;
+  font-weight: 100;
+
+}
+
+.bell-icon{
+ padding-left: 1rem;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #fdfdfd;
+  background-color: #576325;
+  border-radius: 1rem;
+
+}
+
+.client-img{
+  height: 2rem !important;
+  width: 2rem !important;
+  outline: 0.1rem solid #be9e02;
+ 
+}
+
+.client-text{
+  position: relative;
+  left: 2.5rem !important;
+}
+
+
+@media (min-width: 576px) {
+
+  }
+
+  /* End dashboard page */
+
+
+
+
+
+   /* Start Vendorresult page */
+
+   .search-page {
+    padding: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .banner-container {
+    position: relative;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .banner-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .banner-nav.left {
+    left: 10px;
+  }
+  
+  .banner-nav.right {
+    right: 10px;
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .active-dot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: green;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  .vendor-card {
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+  }
+
+  .vendor-icon{
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  
+  }
+
+  .venfilter{
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+   
+  }
+
+  .venback-btn{
+    position: relative !important;
+   left: 75%;
+
+  }
+
+  .seeall-vendor{
+    position: relative;
+    left: 75%;
+  }
+
+  .vensdorresult-section{
+    margin-top: 2rem;
+  }
+
+   /* End Vendorresult page */
+
+
+
+
+
+
+   /* Start Chat Page */
+
+   .sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .profile-section img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .nav-link.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .chat-list-section {
+    border-right: 1px solid #dee2e6;
+  }
+  
+  .chat-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chat-list {
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+  }
+  
+  .chat-item {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    cursor: pointer;
+  }
+  
+  .chat-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .chat-section {
+    padding: 20px;
+  }
+  
+  .chat-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .chat-body {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    padding: 20px 0;
+  }
+  
+  .chat-footer {
+    padding-top: 10px;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .chat-footer .form-control {
+    flex: 1;
+  }
+
+
+     /* End Chat Page */
+
+
+
+      /* start HousekeepingPage */
+     .service-button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .service-button:hover {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .catbanner-text h2{
+      position: absolute;
+      top: 6%;
+      left: 40rem;
+      color: #fff;
+
+    }
+
+    .catbanner-text button{
+      position: absolute;
+      left: 50%;
+      top: 1%;
+
+    }
+
+    .catservice-btn{
+      margin-top: 5rem !important;
+      margin-bottom: 2rem;
+    }
+
+
+
+      /* End HousekeepingPage */
+
+
+
+
+      /* Start Clientdashboard */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f5f5f5;
+      }
+      
+      .sidebar {
+        background-color: #3a5a40;
+        color: white;
+        height: 100vh;
+        padding: 20px;
+      }
+      
+      .profile {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      
+      .profile-img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+      
+      .nav button {
+        color: white;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        border: none;
+        background: none;
+      }
+      
+      .nav button.active {
+        background-color: #2a3b30;
+        border-radius: 5px;
+      }
+      
+      .logo {
+        width: 150px;
+      }
+      
+      .message-icon, .notification-icon {
+        position: relative;
+      }
+      
+      .message-icon .badge, .notification-icon .badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        padding: 5px 10px;
+      }
+      
+      .vendor-card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      
+      .vendor-banner {
+        background-size: cover;
+        background-position: center;
+        height: 150px;
+        position: relative;
+      }
+      
+      .vendor-banner .prev-button, .vendor-banner .next-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+      }
+      
+      .vendor-banner .prev-button {
+        left: 10px;
+      }
+      
+      .vendor-banner .next-button {
+        right: 10px;
+      }
+      
+      .vendor-info {
+        padding: 10px;
+      }
+      
+      .vendor-profile {
+        display: flex;
+        align-items: center;
+      }
+      
+      .vendor-profile .profile-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+        position: relative;
+      }
+      
+      .status-dot {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
+      }
+      
+      .status-dot.active {
+        background-color: green;
+      }
+
+
+        /* End Clientdashboard */
+
+
+
+
+        /* Start Message page */
+
+
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f5f5f5;
+        }
+        
+        .d-flex {
+          display: flex;
+        }
+        
+        .sidebar {
+          width: 250px;
+          background-color: #3d3d3d;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+          height: 100vh;
+        }
+        
+        .profile {
+          text-align: center;
+        }
+        
+        .profile-img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+        }
+        
+        nav ul {
+          list-style: none;
+          padding: 0;
+          width: 100%;
+        }
+        
+        nav ul li {
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+        
+        nav ul li.active {
+          background-color: #505050;
+        }
+        
+        .contact {
+          margin-top: auto;
+          text-align: center;
+        }
+        
+        .contact button {
+          background-color: #28a745;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+        
+        .content {
+          flex-grow: 1;
+          padding: 20px;
+        }
+        
+        .chat-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        
+        .search-bar {
+          display: flex;
+        }
+        
+        .search-bar input {
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px 0 0 5px;
+        }
+        
+        .search-bar button {
+          padding: 5px 10px;
+          border: 1px solid #ccc;
+          background-color: #28a745;
+          color: white;
+          border-radius: 0 5px 5px 0;
+        }
+        
+        .chat-body {
+          display: flex;
+          height: calc(100vh - 100px);
+        }
+        
+        .chat-list {
+          width: 250px;
+          background-color: white;
+          overflow-y: auto;
+        }
+        
+        .chat-item {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          border-bottom: 1px solid #ccc;
+        }
+        
+        .chat-item img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        
+        .chat-details {
+          flex-grow: 1;
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        
+        .chat-details-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px;
+          border-bottom: 1px solid #ccc;
+        }
+        
+        .chat-details-header img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        
+        .messages {
+          padding: 10px;
+          overflow-y: auto;
+          flex-grow: 1;
+        }
+        
+        .message {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+        
+        .message img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        
+        .message-input {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          border-top: 1px solid #ccc;
+        }
+        
+        .message-input button {
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 5px;
+          font-size: 18px;
+        }
+        
+        .message-input input {
+          flex-grow: 1;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin: 0 10px;
+        }
+        
+        .options-dropdown {
+          position: absolute;
+          top: 60px;
+          right: 10px;
+          background-color: white;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          list-style: none;
+          padding: 5px;
+        }
+        
+        .dropup {
+          display: flex;
+          position: absolute;
+          bottom: 60px;
+          left: 10px;
+          flex-direction: column;
+          background-color: white;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        
+        .dropup button {
+          padding: 10px;
+        }
+
+
+          /* /* End Message page */
+
+
+          /* General Styles */
+
+
+ .sidebar {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #eaeaea;
+} 
+
+
+.main-content {
+  background-color: #fff;
+}
+
+.card {
+  border: none;
+}
+
+.card-img-top {
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Top Vendors List */
+.scrollable-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+/* Active State for Nav Items */
+.list-group-item.active {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* Badge Styles */
+.badge-up {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  transform: translate(50%, -50%);
+  font-size: 0.75rem;
+} 
+
+/* Responsive Styles */
+ @media (max-width: 768px) {
+  .sidebar {
+    height: auto;
+  } 
+} 
+
+
+
+/* Start message */
+
+
+/* Start Forgot Password */
+
+.forgot-password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.password-reset-form {
+  margin-top: 20px;
+}
+
+
+
+.form-control {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.forgotpassword h6{
+  font-weight: bold;
+  text-align: left !important;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 767.98px) {
+  .form-container {
+      padding: 20px;
+  }
+
+  .logo {
+      width: 80px;
+  }
+
+  h2 {
+      font-size: 1.3rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  .btn-success {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
+
+
+/* End Forgot Password */
+
+
+
+/* Start Resetpassword */
+
+
+.change-password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.password-reset-form {
+  margin-top: 20px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.form-control {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-requirements {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.password-requirements ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.password-requirements ul li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 767.98px) {
+  .form-container {
+      padding: 20px;
+  }
+
+  .logo {
+      width: 80px;
+  }
+
+  h2 {
+      font-size: 1.3rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  .btn-success {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
+/* End Resetpassword */
+
+
+
+/* Start Logout */
+
+.logout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  
+}
+
+.logout-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center !important;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-lg {
+  width: 45%;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 767.98px) {
+  .logout-content {
+      padding: 20px;
+  }
+
+  .logo {
+      width: 80px;
+  }
+
+  h2 {
+      font-size: 1.3rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  .btn-lg {
+      font-size: 14px;
+      padding: 8px;
+      width: 48%;
+  }
+}
+
+/* End Logout */
+
+
+/* Start userprofile */
+
+.back-userprofile{
+ display: flex;
+ justify-content: left;
+
+}
+
+/* End userprofile */
