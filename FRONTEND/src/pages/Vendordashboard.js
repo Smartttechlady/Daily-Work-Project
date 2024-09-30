@@ -106,7 +106,7 @@ function Vendordashboard() {
                 </a>
               </li>
               <li className={`nav-item ${activeNav === 'settings' ? 'active' : ''}`}>
-                <a className="nav-link text-white" href="#settings" onClick={() => handleNavClick('settings')}>
+                <a className="nav-link text-white" href="/settings2" onClick={() => handleNavClick('settings')}>
                   <i className="bi bi-gear"></i> Settings
                 </a>
               </li>

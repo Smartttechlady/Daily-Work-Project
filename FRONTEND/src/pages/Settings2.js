@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Button, Dropdown, Form, Badge, InputGroup, FormControl,Image } from 'react-bootstrap';
+import React, { useState, useEffect, useRef } from 'react';
+import { Container, Row, Col, Button, Dropdown, Form, Badge, InputGroup, FormControl, Image } from 'react-bootstrap';
 import { FaSearch, FaEnvelope, FaBell, FaHeart, FaChevronLeft, FaFileUpload, FaChevronRight, FaStar, FaEllipsisV, FaPlus, FaPaperPlane, FaMicrophone, FaPlay, FaFile, FaDownload, FaImage, FaEdit } from "react-icons/fa";
 import { useNavigate, Link, NavLink } from 'react-router-dom';
 import { PiChatDotsFill } from "react-icons/pi";
@@ -7,7 +7,9 @@ import { ChatDots } from 'react-bootstrap-icons';
 import { IoLocation } from "react-icons/io5";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaVideo } from "react-icons/fa6";
+import './Settings';
 import './Vendordashboard.css';
+
 
 
 
@@ -148,6 +150,39 @@ function Settings2() {
 
 
 
+
+    const fileInputRef = useRef(null);
+
+   
+    const handleFileChange = (event) => {
+        const file = event.target.files[0];
+        if (file) {
+          
+            const newPhotoUrl = URL.createObjectURL(file);
+            handleProfileChange("profilePhoto", newPhotoUrl);
+
+            
+            uploadFileToServer(file);
+        }
+    };
+
+    const handleImageClick = () => {
+        if (isEditingData && fileInputRef.current) {
+            fileInputRef.current.click();
+        }
+    };
+
+
+
+
+
+
+
+
+
+
+
+
     return (
         <div>
             <div className="container-fluid">
@@ -193,7 +228,7 @@ function Settings2() {
                                 </a>
                             </li>
                             <li className={`nav-item ${activeNav === 'settings' ? 'active' : ''}`}>
-                                <a className="nav-link text-white" href="#settings" onClick={() => handleNavClick('settings')}>
+                                <a className="nav-link text-white" href="/Settings2" onClick={() => handleNavClick('settings')}>
                                     <i className="bi bi-gear"></i> Settings
                                 </a>
                             </li>
@@ -221,13 +256,13 @@ function Settings2() {
                     </div>
 
                     {/* Main Area */}
-                    <Col xs={12} md={8} className="main-content p-3">
+                    <Col xs={12} md={8} className="main-content p-3 overflow-auto">
                         <div className="text-center py-4">
                             <div className="d-flex align-items-center">
-                                <FaChevronLeft className="mr-auto" />
+                                {/* <FaChevronLeft className="mr-auto" /> */}
                                 <h2 className="mx-auto">Profile Settings</h2>
                             </div>
-                            <Image src="/path/to/banner.jpg" className="w-100" />
+                            <Image src={("./..//images/Daily work logo 3.svg")} className="settings-logo" />
                         </div>
 
                         {/* Add Services Section */}
@@ -271,12 +306,22 @@ function Settings2() {
                                 </Button>
                             </div>
                             <div className="text-center my-3">
-                                <Image
-                                    src={profileInfo.profilePhoto}
-                                    roundedCircle
-                                    onClick={() => isEditingData && alert("Upload new photo")}
-                                    style={{ cursor: isEditingData ? "pointer" : "default" }}
-                                />
+                            <Image
+                                src={profileInfo.profilePhoto}
+                                roundedCircle
+                                onClick={handleImageClick}
+                                style={{ cursor: isEditingData ? "pointer" : "default" }}
+                                className='settings-photo-profile'
+                            />
+
+                            {/* Hidden file input element */}
+                            <input
+                                type="file"
+                                accept="image/*"
+                                ref={fileInputRef}
+                                onChange={handleFileChange}
+                                style={{ display: "none" }}  // Hide the file input element
+                            />
                             </div>
                             {Object.keys(profileInfo).map(
                                 (key, index) =>
@@ -309,11 +354,20 @@ function Settings2() {
                                 readOnly={!isEditingPortfolio}
                                 className="my-2"
                             />
-                            <Image
-                                src={portfolio.image1}
-                                className="my-3"
-                                onClick={() => isEditingPortfolio && alert("Upload new image")}
-                                style={{ cursor: isEditingPortfolio ? "pointer" : "default" }}
+                          <Image
+                                src={profileInfo.profilePhoto}
+                                roundedCircle
+                                onClick={handleImageClick}
+                                style={{ cursor: isEditingData ? "pointer" : "default" }}
+                            />
+
+                            {/* Hidden file input element */}
+                            <input
+                                type="file"
+                                accept="image/*"
+                                ref={fileInputRef}
+                                onChange={handleFileChange}
+                                style={{ display: "none" }}  // Hide the file input element
                             />
                             <Form.Control
                                 as="textarea"
@@ -324,17 +378,37 @@ function Settings2() {
                                 className="my-2"
                             />
                             <Image
-                                src={portfolio.image2}
-                                className="my-3"
-                                onClick={() => isEditingPortfolio && alert("Upload new image")}
-                                style={{ cursor: isEditingPortfolio ? "pointer" : "default" }}
+                                src={profileInfo.profilePhoto}
+                                roundedCircle
+                                onClick={handleImageClick}
+                                style={{ cursor: isEditingData ? "pointer" : "default" }}
                             />
+
+                            {/* Hidden file input element */}
+                            <input
+                                type="file"
+                                accept="image/*"
+                                ref={fileInputRef}
+                                onChange={handleFileChange}
+                                style={{ display: "none" }}  // Hide the file input element
+                            />
+
                             <Image
-                                src={portfolio.image3}
-                                className="my-3"
-                                onClick={() => isEditingPortfolio && alert("Upload new image")}
-                                style={{ cursor: isEditingPortfolio ? "pointer" : "default" }}
+                                src={profileInfo.profilePhoto}
+                                roundedCircle
+                                onClick={handleImageClick}
+                                style={{ cursor: isEditingData ? "pointer" : "default" }}
                             />
+
+                            {/* Hidden file input element */}
+                            <input
+                                type="file"
+                                accept="image/*"
+                                ref={fileInputRef}
+                                onChange={handleFileChange}
+                                style={{ display: "none" }}  // Hide the file input element
+                            />
+
                         </section>
 
                         {/* Pricing Section */}

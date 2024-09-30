@@ -13,11 +13,11 @@ function Allpost() {
   const [rating, setRating] = useState("Rating");
   const [searchQuery, setSearchQuery] = useState("");
   const [favorite, setFavorite] = useState([false, false, false]);
-  const [entries, setEntries] = useState(10);
+  const [posts, setPosts] = useState(10);
  
 
 
-  const handleEntriesChange = (numEntries) => setEntries(numEntries);
+  const handlePostsChange = (numPosts) => setPosts(numPosts);
 
 
   const serviceCategories = [" HouseKeeping", "InstallationOrRepairs", "HealthAndFitness", "Education", "Transport", "Beauty", "RealEstate", "Catering", "EventAndEntertainment", "Agriculture", "Marketing", "Technology"];
@@ -43,11 +43,11 @@ function Allpost() {
   const priceRanges = ["N1000 - N5000", "N5000 - N10000", "N10000 - N50000"];
   const ratings = [1, 2, 3, 4, 5];
 
-  const handleFavorite = (index) => {
-    const newFavorites = [...favorite];
-    newFavorites[index] = !newFavorites[index];
-    setFavorite(newFavorites);
-  };
+   const handleFavorite = (index) => {
+   const newFavorites = [...favorite];
+   newFavorites[index] = !newFavorites[index];
+   setFavorite(newFavorites);
+   };
 
 
 
@@ -163,27 +163,7 @@ function Allpost() {
 
 
 
-    // vendor 3
-    const images4 = [
-      './..//images/dance teacher.png',
-      './..//images/dance teacher1.png',
-      './..//images/dance teacher2.png',
-  
-    ];
-  
-    const [currentImageIndex4, setCurrentImageIndex4] = useState(0);
-  
-    const handleNextImage4 = () => {
-      setCurrentImageIndex4((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    };
-  
-    const handlePreviousImage4 = () => {
-      setCurrentImageIndex3((prevIndex) =>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
-      );
-    };
+
 
 
 
@@ -429,7 +409,7 @@ function Allpost() {
                       <FaHeart
                         className="ml-auto"
                         style={{ cursor: "pointer" }}
-                        color={favorite[index] ? "red" : "gray"}
+                        color= {favorite ? "red" : "gray"}
                         onClick={handleFavorite}
                       />
                     </p>
@@ -493,80 +473,13 @@ function Allpost() {
                       <span>From N16,000</span>
                       <FaHeart
                         className="ml-auto"
-                        style={{ cursor: "pointer", color: "red" }}
+                        style={{ cursor: "pointer" }}
+                        color= {favorite ? "red" : "gray"}
                         onClick={handleFavorite}
                       />
                     </p>
                   </div>
                 </div>
-
-
-                
-                {/* Vendor 4 */}
-                {vendors.map((vendor, index) => (
-                <div className="card mx-1" style={{ width: "18rem", position: "relative" }} key={index}>
-                  <div className="position-relative">
-                    <img
-                      src={images4[currentImageIndex4]}
-                      className="card-img-top"
-                      alt={`Vendor ${index}`}
-                    />
-                    <div className="position-absolute top-50 start-0 translate-middle-y">
-                      <Button variant="light" className="rounded-circle" onClick={handlePreviousImage3}>
-                        <FaChevronLeft />
-                      </Button>
-                    </div>
-                    <div className="position-absolute top-50 end-0 translate-middle-y">
-                      <Button variant="light" className="rounded-circle" onClick={handleNextImage3} >
-                        <FaChevronRight />
-                      </Button>
-                    </div>
-                  </div>
-                  <div className="card-body">
-                    <div className="d-flex align-items-center mb-2">
-                      <div className="position-relative mr-2">
-                        <img
-                          src={("./..//images/Telma.png")}
-                          alt="Profile"
-                          className="rounded-circle"
-                        />
-                        {isOnline && (
-                          <span
-                            style={{
-                              position: "absolute",
-                              bottom: 0,
-                              right: 0,
-                              width: "10px",
-                              height: "10px",
-                              backgroundColor: "green",
-                              borderRadius: "50%",
-                              border: "2px solid white",
-                            }}
-                          />
-                        )}
-                      </div>
-                      <h5 className="card-title ms-2">Telma Davis</h5>
-                    </div>
-                    <p className="card-text">
-                      I bring years of experience and a deep love for movement to every class.
-                      Whether you're a beginner or an advanced dancer aiming to refine your skills.
-                    </p>
-                    <p className="card-text d-flex align-items-center">
-                      <strong>4.2 (102)</strong>
-                      <FaStar className="ml-2" style={{ color: "gold" }} />
-                    </p>
-                    <p className="card-text d-flex justify-content-between align-items-center">
-                      <span>From N16,000</span>
-                      <FaHeart
-                        className="ml-auto"
-                        style={{ cursor: "pointer", color: favorite[index] ? "red" : "gray" }}
-                        onClick={() => handleFavorite(index)} 
-                      />
-                    </p>
-                  </div>
-                </div>
-                ))}
-
 
 
 
@@ -577,9 +490,9 @@ function Allpost() {
 
       {/* Pagination */}
       <div className="d-flex justify-content-center mt-5">
-            <Dropdown onSelect={handleEntriesChange}>
+            <Dropdown onSelect={handlePostsChange}>
               <Dropdown.Toggle variant="outline-success">
-                Show {entries}
+                Show {posts}
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item eventKey="5">5</Dropdown.Item>
@@ -589,7 +502,7 @@ function Allpost() {
               </Dropdown.Menu>
             </Dropdown>
             <p>
-              Showing 1-{entries} of 500 entries
+              Showing 1-{posts} of 500 entries
             </p>
           </div> 
 

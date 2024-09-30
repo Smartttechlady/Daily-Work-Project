@@ -95,9 +95,9 @@ function Invoice() {
       const grandTotal = rows.reduce((acc, row) => acc + row.subtotal, 0);
     
       const handleSendInvoice = () => {
-        // Implement sending invoice to the client's inbox (e.g., via email or in-app message)
+       
         alert(`Invoice sent to client ${clientID}`);
-        navigate('/client-inbox'); // Navigate to client inbox
+        navigate('/client-inbox'); 
       };
 
 
@@ -154,7 +154,7 @@ function Invoice() {
                 </a>
               </li>
               <li className={`nav-item ${activeNav === 'settings' ? 'active' : ''}`}>
-                <a className="nav-link text-white" href="#settings" onClick={() => handleNavClick('settings')}>
+                <a className="nav-link text-white" href="/Settings2" onClick={() => handleNavClick('settings')}>
                   <i className="bi bi-gear"></i> Settings
                 </a>
               </li>

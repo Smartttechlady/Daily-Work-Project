@@ -8,6 +8,7 @@ const Userprofile = () => {
   const userData = {
     userID: "ID0835297",
     name: "Fisayo Valerie Omotosho",
+    phoneNumber: "+234 7056431876",
     address: ["5, Westlife street", "Omole Phase 1"],
     profilePicture: "./..//images/fisayo.png"
   };
@@ -23,6 +24,7 @@ const Userprofile = () => {
         style={{ maxWidth: "100px" }}
       />
 
+
       {/* Profile Picture */}
       <div className="mb-4">
         <Image
@@ -32,7 +34,7 @@ const Userprofile = () => {
           style={{
             width: "150px",
             height: "150px",
-            border: "5px solid #FFC107", // Yellow border color
+            border: "5px solid #FFC107", 
             padding: "5px"
           }}
         />
@@ -48,6 +50,12 @@ const Userprofile = () => {
       <Form.Group className="w-75">
         <Form.Label>Name:</Form.Label>
         <Form.Control type="text" value={userData.name} readOnly />
+      </Form.Group>
+
+         {/* Phone Number */}
+         <Form.Group className="w-75">
+        <Form.Label>Phone Number:</Form.Label>
+        <Form.Control type="text" value={userData. phoneNumber} readOnly />
       </Form.Group>
 
       {/* Address */}

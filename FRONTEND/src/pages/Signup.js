@@ -12,11 +12,14 @@ import './Style.css'
 
 function Signup() {
 
+  const hire = window.location.href.split('=')[1]
+
   let navigate = useNavigate()
 
   function handleSignup(e) {
     e.preventDefault()
-    let form = new FormData(e.currentTarget)
+    let form = new FormData(e.currentTarget)  
+    form.append("hiring", hire)
 
     axios.post("http://localhost:8000/signup/", form)
       .then((response) => {
@@ -29,6 +32,10 @@ function Signup() {
         for (let key in error.response.data) {
           alert(`${ key } ${ error.response.data[key] }`);
         }
+       
+        
+       ;
+        
       })
 
   }

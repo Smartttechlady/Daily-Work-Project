@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <h1>Verification Email</h1>
+
+    <div>
+        Dear {{name}},
+        
+        <h6>Welcome To ElewenJeko</h6>
+
+        <p>Your account has been created successfully. Please verify your email address by clicking the link below.</p>
+        
+        <a href="{{ verification_link }}">Verify Your Email</a>
+
+        <br><br>
+        Thank you for using our platform!
+        <br><br>
+        Regards,<br>
+        admin ElewenJeko
+    </div> -->
+
+    <div className="container d-flex flex-column justify-content-center align-items-center min-vh-100 text-center">
+        <div className="mb-4">
+          <img 
+            src="Images/Daily work logo 3.svg"
+            alt="" 
+            style="height: 50px"
+          />
+        </div>
+        <div className="mb-4">
+          <img 
+            src="Images/verify-img.png"
+            alt="Verification Success" 
+            className="img-fluid" 
+            style="max-Width: '300px" 
+          />
+        </div>
+        <div className="mb-3">
+          <h4 className="text-success">Yippee!!! Your account has been successfully verified</h4>
+        </div>
+        <div>
+          <a href="http://localhost:3000/clientdashboard" className="btn btn-success btn-lg">Go to Dashboard</a>
+        </div>
+      </div>
+
+</body>
+</html>

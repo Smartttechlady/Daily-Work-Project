@@ -116,7 +116,7 @@ function Transaction() {
   const handleEntriesChange = (numEntries) => setEntries(numEntries);
 
 
-  const [jobStatus, setJobStatus] = useState('In Progress'); // Default status
+  const [jobStatus, setJobStatus] = useState('In Progress'); 
 
     const handleSelect = (status) => {
         setJobStatus(status);

@@ -10,11 +10,12 @@ import "bootstrap/dist/js/bootstrap.bundle.js"
 
 
 
+
 const Home = React.lazy(() => import("./pages/Home"))
 const Login = React.lazy(() => import("./pages/Login"))
 const Signup = React.lazy(() => import("./pages/Signup"))
 const Notfound = React.lazy(() => import("./pages/Notfound"))
-const Clientapply = React.lazy(() => import("./pages/Clientapply"))
+const Userjoin = React.lazy(() => import("./pages/Userjoin"))
 const About = React.lazy(() => import("./pages/About"))
 const Profilesettings = React.lazy(() => import("./pages/Profilesettings"))
 const Profilesummary = React.lazy(() => import("./pages/Profilesummary"))
@@ -57,6 +58,7 @@ const Clientprofile = React.lazy(() => import("./pages/Clientprofile"))
 const Settings2 = React.lazy(() => import("./pages/Settings2"))      
 const Createpost = React.lazy(() => import("./pages/Createpost"))      
 const Userprofile = React.lazy(() => import("./pages/Userprofile"))      
+const Allpost = React.lazy(() => import("./pages/Allpost"))      
     
   
 
@@ -78,7 +80,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Notfound />} />
-          <Route path="/clientapply" element={<Clientapply />} />
+          <Route path="/userjoin" element={<Userjoin />} />
           <Route path="/profilesettings" element={<Profilesettings />} />
           <Route path="/profilesummary" element={<Profilesummary />} />
           <Route path="/dashboard" element={<Dashboard />} />
@@ -117,16 +119,17 @@ function App() {
           <Route path="/terms-conditions" element={<Terms_conditions/>} />
           <Route path="/clientprofile" element={<Clientprofile/>} />
           <Route path="/settings2" element={<Settings2/>} />
-          <Route path="/create-post" element={<Createpost/>} />
+          <Route path="/createpost" element={<Createpost/>} />
           <Route path="/userprofile" element={<Userprofile/>} />
+          <Route path="/allpost" element={<Allpost/>} />
   
           
         </Routes>
 
-
+        <Footer/>
       </BrowserRouter>
 
-      <Footer />
+      
     </React.Suspense>
 
   )

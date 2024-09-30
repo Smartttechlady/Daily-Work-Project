@@ -1,0 +1,46 @@
+
+/* Ensures the main content area scrolls vertically if content exceeds the viewport height */
+.main-content {
+    overflow-y: auto !important;
+    height: 100% !important;
+}
+
+/* Optional: If you want to hide the scrollbar but still allow scrolling */
+.main-content::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important;
+    background-color: blue !important;
+}
+
+/* Adds padding and ensures content in the main area does not get cut off */
+.container-fluid, .row {
+    height: 100% !important;
+}
+
+/* Adjustments for the right sidebar's content */
+.right-sidebar {
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* Ensures left sidebar does not overflow */
+.left-sidebar {
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* Adjusts the scrollable list inside the right sidebar */
+.scrollable-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Optional: Styling for the scrollable list's scrollbar */
+.scrollable-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}

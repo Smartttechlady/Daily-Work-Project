@@ -95,7 +95,7 @@ function Navbar() {
             </ul>
 
         
-              <Link to={"/signup"}  className="btn my-2 my-sm-0 fw-bold btn-join" type="submit"> Join </Link>
+              <Link to={"/userjoin"}  className="btn my-2 my-sm-0 fw-bold btn-join" type="submit"> Join </Link>
            
 
             <button

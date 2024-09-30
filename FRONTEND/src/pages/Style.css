@@ -36,7 +36,15 @@
   padding: 20px;
   cursor: pointer;
   border-radius: 10px;
-  transition: border-color 0.3s ease;
+  /* transition: border-color 0.3s ease; */
+}
+
+.option-box a{
+  text-decoration: none !important;
+}
+
+.option-box:hover {
+  border: 2px solid #28a745;
 }
 
 .clienticon{
@@ -1378,9 +1386,17 @@ p {
 /* Start userprofile */
 
 .back-userprofile{
- display: flex;
- justify-content: left;
+ position: relative;
+ left: 50%;
 
 }
 
 /* End userprofile */
+
+
+
+
+
+
+
+
